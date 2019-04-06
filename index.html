@@ -1,16 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Basic Trivia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="container back">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="font-weight-bold mt-5 mb-5">TRIVIA GAME</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <button class="btn btn-info font-weight-bold w-25 mt-5 start-btn">Start</button>
+            </div>
+            <div class="col-12 timer-div d-none mb-2">
+                <h4 class="font-weight-bold">Time Remaining: <span id="second"> 160 </span> Seconds</h4>
+            </div>
+            <hr>
+
+            <div class="full-form col-12 d-none">
+                <div class="row">
+                    <div class="col-12 forms-div">
+                        <h4 id="h-0">Q0</h4>
+                        <form id="f-0">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio00" name="f-0"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio00" for="customRadio00">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio01" name="f-0"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio01" for="customRadio01">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio02" name="f-0"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio02" for="customRadio02">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio03" name="f-0"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio03" for="customRadio03">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-1">Q1</h4>
+                        <form id="f-1">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio10" name="f-1"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio10" for="customRadio10">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio11" name="f-1"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio11" for="customRadio11">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio12" name="f-1"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio12" for="customRadio12">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio13" name="f-1"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio13" for="customRadio13">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-2">Q2</h4>
+                        <form id="f-2">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio20" name="f-2"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio20" for="customRadio20">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio21" name="f-2"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio21" for="customRadio21">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio22" name="f-2"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio22" for="customRadio22">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio23" name="f-2"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio23" for="customRadio23">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-3">Q3</h4>
+                        <form id="f-3">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio30" name="f-3"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio30" for="customRadio30">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio31" name="f-3"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio31" for="customRadio31">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio32" name="f-3"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio32" for="customRadio32">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio33" name="f-3"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio33" for="customRadio33">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-4">Q4</h4>
+                        <form id="f-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio40" name="f-4"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio40" for="customRadio40">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio41" name="f-4"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio41" for="customRadio41">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio42" name="f-4"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio42" for="customRadio42">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio43" name="f-4"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio43" for="customRadio43">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-5">Q5</h4>
+                        <form id="f-5">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio50" name="f-5"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio50" for="customRadio50">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio51" name="f-5"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio51" for="customRadio51">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio52" name="f-5"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio52" for="customRadio52">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio53" name="f-5"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio53" for="customRadio53">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-6">Q6</h4>
+                        <form id="f-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio60" name="f-6"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio60" for="customRadio60">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio61" name="f-6"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio61" for="customRadio61">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio62" name="f-6"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio62" for="customRadio62">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio63" name="f-6"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio63" for="customRadio63">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                        <h4 id="h-7">Q7</h4>
+                        <form id="f-7">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio70" name="f-7"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio70" for="customRadio70">A0</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio71" name="f-7"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio71" for="customRadio71">A1</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio72" name="f-7"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio72" for="customRadio72">A2</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" id="customRadio73" name="f-7"
+                                    value="customEx">
+                                <label class="custom-control-label customRadio73" for="customRadio73">A3</label>
+                            </div>
+                        </form>
+                        <hr>
+
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-info m-2 done">Done</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 results-div d-none">
+                <h2>All Done!</h2>
+                <hr>
+                <p>Correct Answers: <span id="corrects"></span></p>
+                <p>Incorrect Answers: <span id="incorrects"></span></p>
+                <p>Unanswered: <span id="unanswereds"></span></p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
